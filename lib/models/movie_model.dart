@@ -8,7 +8,8 @@ class MovieModel {
   String synopsis;
   String imgUrl;
   String movieUrl;
-
+  bool isAdded; // toggle 
+ 
   MovieModel({
     required this.title,
     required this.year,
@@ -19,6 +20,7 @@ class MovieModel {
     required this.synopsis,
     required this.imgUrl,
     required this.movieUrl,
+    this.isAdded = false, // default
   });
 }
 
